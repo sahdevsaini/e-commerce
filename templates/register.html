@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Sign up</title>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/validateForm.js') }}">
+</script>
+</head>
+<body>
+    <table bgcolor="white" align="left">
+<form action="/register" method="POST" onsubmit="return validate()">
+    <tr>
+        <td>
+    <p>Email: <td><input type="email" name="email"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Password: <td><input type="password" name="password" id="password" required></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Confirm Password: <td><input type="password" name="cpassword" id="cpassword"></td></p>
+        </td>
+    <tr>
+    <tr>
+        <td>
+    <p>First Name: <td><input type="text" name="firstName"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Last Name: <td><input type="text" name="lastName"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Address Line 1: <td><input type="text" name="address1"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Address Line 2: <td><input type="text" name="address2"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Zipcode: <td><input type="text" name="zipcode"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>City: <td><input type="text" name="city"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>State: <td><input type="text" name="state"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Country: <td><input type="text" name="country"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <p>Phone Number: <td><input type="text" name="phone"></td></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <a href="/loginForm">Login here</a>   
+    <p><td><input type="submit" value="Register"></p>
+    
+        </td>
+    </tr>
+    </form>
+</body>
+</html>
+
+
+
